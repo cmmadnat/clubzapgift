@@ -3,4 +3,7 @@ info:
 spring:
     jmx:
         enabled: false
+    thymeleaf:
+      cache: false
+      mode: LEGACYHTML5
 gcs_url: https://storage.googleapis.com/clubzapgift.appspot.com/
