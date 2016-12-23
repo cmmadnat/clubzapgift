@@ -71,7 +71,7 @@ class ServerRunning private constructor(path: String) : MethodRule {
     override fun apply(base: Statement, method: FrameworkMethod, target: Any): Statement {
 
         // Check at the beginning, so this can be used as a static field
-        Assume.assumeTrue(serverOnline[port])
+        Assume.assumeTrue(serverOnline[port] as Boolean)
 
         val client = RestTemplate()
         val followRedirects = HttpURLConnection.getFollowRedirects()

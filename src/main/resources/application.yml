@@ -3,3 +3,4 @@ info:
 spring:
     jmx:
         enabled: false
+gcs_url: https://storage.googleapis.com/clubzapgift.appspot.com/
